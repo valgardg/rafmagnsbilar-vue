@@ -21,7 +21,7 @@ import UmOkkurButton from '@/components/buttons/UmOkkurButton.vue';
 <style scoped>
 .header-div {
 	margin-top: 0px;
-	padding: 12px 10px;
+    padding: 0.2rem;
 	background-color: var(--c-primary-100);
 }
 .header-logo-r {
