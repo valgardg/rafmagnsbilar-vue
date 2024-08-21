@@ -1,5 +1,35 @@
 <template>
-    <div>
-        <p>Header</p>
-    </div>
+	<nav class="navbar sticky-top navbar-expand-lg header-div">
+		<div class="container-fluid d-flex justify-content-between">
+			<div>
+                <img src="@/assets/images/rafmagnsbilarRLogo.png" class="header-logo-r ms-2" />
+            </div>
+			<div>
+                <img src="@/assets/images/rafmagnsbilarMainLogo.png" class="header-logo-main" />
+            </div>
+			<div>
+                <UmOkkurButton />
+            </div>
+		</div>
+	</nav>
 </template>
+
+<script setup lang="ts">
+import UmOkkurButton from '@/components/buttons/UmOkkurButton.vue';
+</script>
+
+<style scoped>
+.header-div {
+	margin-top: 0px;
+	padding: 12px 10px;
+	background-color: var(--c-primary-100);
+}
+.header-logo-r {
+    width: 25px;
+    height: 25px;
+}
+.header-logo-main {
+    height: 48px;
+    width: 158px;
+}
+</style>

@@ -17,6 +17,7 @@ import FooterComponent from './components/Footer.vue';
 <style scoped>
 .main-container {
   min-height: 100vh;
+  font-family: 'Space Grotesk', sans-serif; /* font for the entire site */
 }
 .router-view {
   flex: 1;
