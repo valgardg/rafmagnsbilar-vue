@@ -1,0 +1,11 @@
+/* Rafmagnsbilar color palette */
+:root {
+    /* primary */
+    --c-primary-100: #0D0322;
+    /* secondary */
+    --c-secondary-100: #192344;
+    --c-secondary-90: #212E59;
+    --c-secondary-80: #273668;
+
+    --c-accent-100: #34FF66;
+}
