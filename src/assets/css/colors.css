@@ -7,5 +7,9 @@
     --c-secondary-90: #212E59;
     --c-secondary-80: #273668;
 
+    /* accents */
     --c-accent-100: #34FF66;
+
+    /* grays */
+    --c-gray-100: #343a40;
 }

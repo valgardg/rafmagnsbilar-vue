@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column main-container">
     <HeaderComponent/>
-    <div class="container d-flex flex-column justify-content-center align-items-center router-view">
+    <div class="container d-flex flex-column justify-content-start align-items-center router-view">
       <RouterView/>
     </div>
     <FooterComponent/>
