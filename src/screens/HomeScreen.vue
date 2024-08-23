@@ -12,6 +12,10 @@
                 <SortOptions />
             </div>
         </div>
+        <!-- listings section -->
+        <div>
+            <div class="fw-bold fs-3 mt-5">Bílar í boði</div>
+        </div>
     </div>
 </template>
 
