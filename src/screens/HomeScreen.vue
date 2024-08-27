@@ -14,7 +14,7 @@
         </div>
         <!-- listings section -->
         <div class="mb-5">
-            <div class="fw-bold fs-3 mt-5">Bílar í boði</div>
+            <div class="fw-bold fs-3 mt-5 mb-3">Bílar í boði</div>
             <div class="row row-cols-3 gy-4">
                 <div class="">
                     <CarListing />
@@ -33,6 +33,10 @@
                 </div>              ! TO ALIGN CORRECTLY -->
             </div>
         </div>
+        <!-- car brands section -->
+        <div>
+            <CarBrands />
+        </div>
     </div>
 </template>
 
@@ -45,4 +49,6 @@ import YearRange from '@/components/input/YearRange.vue';
 import SortOptions from '@/components/input/SortOptions.vue';
 // car listings
 import CarListing from '@/components/CarListing.vue';
+// car brands
+import CarBrands from '@/components/CarBrands.vue';
 </script>
