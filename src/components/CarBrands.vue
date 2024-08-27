@@ -1,6 +1,6 @@
 <template>
     <div class="fw-bold fs-3 mb-4">Vinsæl Bílamerki</div>
-    <img src="@/assets/brands/bmw.svg" />    
+    <img src="@/components/brands/bmw.svg" alt=""/>    
 </template>
 
 <script setup lang="ts">
