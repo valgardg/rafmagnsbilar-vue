@@ -1,16 +1,16 @@
 <template>
     <div class="d-flex flex-column listing-frame">
-        <img class="listing-image" src="@/assets/images/kiaTitleImage.jpg" />
+        <img class="listing-image" :src="thumbnail" />
         <div class="ps-3 pe-3 pb-3">
-            <div class="mt-1 fw-bold fs-5">2023 Audi Q8 Etron 55</div>
+            <div class="mt-1 fw-bold fs-5">{{ year }} {{  make }} {{ model }}</div>
             <hr class="m-0 p-0">
-            <div class="row g-0">
+            <div class="row g-0 mt-1">
                 <div class="col-8 d-flex flex-column">
                     <div class="d-flex justify-content-between">
-                        <div>ISK 14,790,000</div>
-                        <div>Ekið 2500km</div>
+                        <div>ISK {{ price }}</div>
+                        <div>Ekið {{ mileage }}km</div>
                     </div>
-                    <div>Rafmagns</div>
+                    <div>{{ fuelType }}</div>
                 </div>
                 <div class="col-4 d-flex align-items-end justify-content-end">
                     <SkodaButton />
@@ -22,6 +22,17 @@
 
 <script setup lang="ts">
 import SkodaButton from '@/components/buttons/SkodaButton.vue';
+withDefaults(defineProps<{
+    make: string;
+    model: string;
+    year: number;
+    price: number;
+    mileage: number;
+    fuelType: string;
+    thumbnail: string;
+}>(), {
+
+});
 </script>
 
 <style scoped>

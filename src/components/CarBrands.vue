@@ -13,7 +13,7 @@ const svgModules: Record<string, { default: any}> = import.meta.glob('@/componen
 const svgUrls = reactive<Record<string, any>>({});
 
 for (const path in svgModules) {
-    console.log(path);
+    // console.log(path);
     // const fileName = path.split('/').pop()?.replace('.svg','')
     // if(fileName) {
     //     svgUrls[fileName] = svgModules[path];
