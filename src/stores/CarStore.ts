@@ -4,7 +4,8 @@ import type { Car } from '@/types/car';
 
 export const useCarStore = defineStore('carStore', {
     state: () => ({
-        cars: [] as Car[] // TODO: create a car model
+        cars: [] as Car[],
+        selectedCar: null as Car
     }),
     getters: {
 
@@ -15,6 +16,10 @@ export const useCarStore = defineStore('carStore', {
             const response = await axios.get(`cars/`);
             console.log('cars:', response.data);
             this.cars = response.data;
+        },
+        async selectCar(car: Car) {
+            this.selectedCar = car;
+            console.log(car);
         }
     }
 });

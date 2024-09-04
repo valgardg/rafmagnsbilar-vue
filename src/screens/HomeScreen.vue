@@ -18,14 +18,8 @@
             <div class="row row-cols-3 gy-4">
                 <div v-for="(car, index) in cars" class="">
                     <CarListing
-                        :key="index"
-                        :make="car.make"
-                        :model="car.model"
-                        :year="car.year"
-                        :price="car.price"
-                        :mileage="car.mileage"
-                        :fuelType="car.fuelType"
-                        :thumbnail="car.images[0]"
+                    :key="index"
+                    :car="car"
                     />
                 </div>
                 <!-- <div class=""> ! WRAPPING IN DIV IS 
