@@ -5,5 +5,6 @@ export type Car = {
     price: number,
     mileage: number,
     fuelType: string,
+    description: string,
     images: string[],
 }
