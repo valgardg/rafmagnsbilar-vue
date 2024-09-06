@@ -21,5 +21,6 @@ import FooterComponent from './components/Footer.vue';
 }
 .router-view {
   flex: 1;
+  margin-bottom: 7rem;
 }
 </style>
