@@ -3,7 +3,7 @@
         <div class="mt-5 row">
             <!-- image section -->
             <div class="col-6 g-0">
-                <div>
+                <div class="d-flex justify-content-start align-items-center selected-image-frame">
                     <img class="selected-image" :src="selectedCar.images[currentImage]"/>
                 </div>
                 <div class="mt-4 d-flex slider-container">
@@ -84,14 +84,26 @@ const currentImage = ref(0);
     width: 4rem;
     margin-right: 1rem;
 }
+.sub-image:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+}
 .selected-image {
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease-in-out;
+}
+.selected-image:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+}
+.selected-image-frame {
+    border-radius: 0.5rem;
 }
 /* image slider */
 .slider-container {
     max-width: 50rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
 }
 /* right side overview */
